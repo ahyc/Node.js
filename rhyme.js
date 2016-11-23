@@ -1,9 +1,12 @@
 var http = require('http');
 
+// Get words that rhyme with the second parameter passed through the terminal:
 var word = process.argv.slice(2);
+// Default word, if no word given, is 'hello':
 if(word.length == 0) {
   word = 'hello';
 }
+// Get the strongest 10 rhyming words:
 var maxResult = 10;
 
 var options = {
